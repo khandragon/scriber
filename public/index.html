@@ -14,16 +14,18 @@
 
 <body>
   <header>
-    <h1>Voz</h1>
+    <h1>Scriber</h1>
   </header>
 
   <!-- Primitive Popup -->
-  <div id = "popup"></div>
+  <div id="popup"></div>
   <div id="textBoxDiv">
     <div id="rec-result"></div>
     <br>
-    <button id="start-rec">Start Recording</button>
-    <button id="stop-rec" disabled>Stop Recording</button>
+    <div>
+      <label for="image_uploads">Upload Recording(MP3)</label>
+      <input type="file" accept=".mp3" name="file_inputed" id="start-rec">
+    </div>
     <button id="clear-rec">Clear Recording</button>
 
   </div>
