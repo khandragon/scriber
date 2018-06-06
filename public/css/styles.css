@@ -1,0 +1,132 @@
+body {
+    font-family: JohnstonMdITCTT, Verdana, Helvetica, sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #d24e4e;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+nav h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+#textBoxDiv {
+    padding: 5%;
+    padding-bottom: 100%;
+    border-top: 2px solid #202020;
+    background-color: aliceblue;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(92, 92, 92);
+}
+
+button {
+    border-radius: 5px;
+    padding: 0.8%;
+    margin: 1%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+button:enabled:hover {
+    border-radius: 5px;
+    padding: 0.8%;
+    background-color: rgb(165, 12, 12);
+    color: whitesmoke;
+}
+button:hover{
+border-radius: 5px;
+padding: 0.8%;
+background-color: rgb(165, 12, 12);
+color: whitesmoke;
+}
+
+/* Style for popup below */
+
+#popup {
+  visibility: hidden;
+  min-width: 250px;
+  min-height: 10px;
+  max-height: 20px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 130px;
+}
+
+#popup.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  display: block;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
