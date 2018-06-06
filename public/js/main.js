@@ -142,6 +142,11 @@ document.addEventListener('DOMContentLoaded', e => {
 
   clearRec.addEventListener('click', function() {
     recResult.value = "";
+     // primitive code
+     popup("Recording Stopped !!")
+     recorder.stop()
+     stopRec.disabled = true
+     startRec.disabled = false
   })
 
   startRec.addEventListener('change', e => {
@@ -150,14 +155,6 @@ document.addEventListener('DOMContentLoaded', e => {
     startSTT()
     startRec.disabled = true
     stopRec.disabled = false
-  })
-
-  stopRec.addEventListener('click', e => {
-    // primitive code
-    popup("Recording Stopped !!")
-    recorder.stop()
-    stopRec.disabled = true
-    startRec.disabled = false
   })
 })
 
