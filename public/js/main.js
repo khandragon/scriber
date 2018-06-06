@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', e => {
     recResult.value = "";
   })
 
-  startRec.addEventListener('click', e => {
+  startRec.addEventListener('change', e => {
     // primitive code
     popup("Recording Started !!")
     startSTT()
